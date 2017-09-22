@@ -31,20 +31,27 @@ public class Ordenar3Numeros {
                    JOptionPane.showMessageDialog(null, num1 +" "+ num3 +" "+ num2);
                }
             }
-        }else if(num2 > num3){
-            if(num1 > num3) {
-                JOptionPane.showMessageDialog(null, num2+" "+num1+" "+num3);
-            }else{
-                JOptionPane.showMessageDialog(null, num2+" "+num3+" "+num1);
+        }
+        
+        if(num2 > num1){
+            if(num2 > num3) {
+                if(num1 > num3){
+                    JOptionPane.showMessageDialog(null, num2+" "+num1+" "+num3);
+                    
+                }else{
+                    JOptionPane.showMessageDialog(null, num2+" "+num3+" "+num1);
+                }
             }
          }
         // Lo sacamos del else if, por que cuando era 2,1,3 evaluaba el primero y nunca entraba a este. 
         if(num3 > num1){
-             if(num1 > num2){
-                 JOptionPane.showMessageDialog(null, num3+" "+num1+" "+num2);
-             }else
-                 JOptionPane.showMessageDialog(null, num3+" "+num2+" "+num1);
-             
+             if(num3 > num2){
+                 if(num1 > num2){
+                    JOptionPane.showMessageDialog(null, num3+" "+num1+" "+num2);
+                 }else{
+                    JOptionPane.showMessageDialog(null, num3+" "+num2+" "+num1);
+                 }
+             }
          }
             
         
