@@ -35,10 +35,12 @@ public class Ordenar3Numeros {
                 }else{
                     JOptionPane.showMessageDialog(null, num2+" "+num3+" "+num1);
                 }
-        }else if(num1 > num2){
-                JOptionPane.showMessageDialog(null, num3+" "+num1+" "+num2);
-            }else{
-                JOptionPane.showMessageDialog(null, num3+" "+num2+" "+num1);  
+        }else if(num3 > num2 && num3 > num1){
+                if(num1 > num2){
+                    JOptionPane.showMessageDialog(null, num3+" "+num1+" "+num2); 
+                }else{
+                    JOptionPane.showMessageDialog(null, num3+" "+num2+" "+num1);  
+                }
         }         
     }
 }
